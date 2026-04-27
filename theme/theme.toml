@@ -1,0 +1,5 @@
+name        = "base"
+author      = "ezra"
+description = "Minimal Gruvbox base theme"
+version     = "0.1.0"
+license     = "MIT"

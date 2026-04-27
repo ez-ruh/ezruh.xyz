@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %} {{ metadata.title | lower | replace(from=" ", to="-") }} {{ config.title }} {% endblock title %}
+{% block sb_path %}~/posts/{{ metadata.title | lower | replace(from=" ", to="-") }}.norg{% endblock sb_path %}
+
+{% block content %}
+<article class="prose">
+  {{ content | safe }}
+</article>
+{% endblock content %}

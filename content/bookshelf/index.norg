@@ -1,0 +1,13 @@
+@document.meta
+title: Bookshelf
+description: Books I've read.
+authors: [
+  ezra
+]
+categories: []
+created: 2025-01-01T00:00:00-00:00
+updated: 2026-04-26T18:48:05-0600
+layout: bookshelf
+draft: false
+version: 1.1.1
+@end

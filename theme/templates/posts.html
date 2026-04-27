@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}posts — {{ config.title }}{% endblock title %}
+{% block sb_path %}~/posts/index.norg{% endblock sb_path %}
+
+{% block content %}
+<h1>posts</h1>
+
+{% set_global published = [] %}
+{% for post in posts | filter(attribute="draft", value=false) %}
+  {% if "book" not in post.categories %}
+    {% set_global published = published | concat(with=post) %}
+  {% endif %}
+{% endfor %}
+{% set published = published | sort(attribute="created") | reverse %}
+
+{% for post in published %}
+<a class="post-row" href="{{ post.permalink }}">
+  <span class="post-title">{{ post.title }}</span>
+  <span class="post-date">{{ post.created | date(format="%Y-%m-%d") }}</span>
+</a>
+{% endfor %}
+
+{% if published | length == 0 %}
+  <p style="color: var(--fg4);">// nothing here yet</p>
+{% endif %}
+{% endblock content %}

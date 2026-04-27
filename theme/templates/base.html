@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ config.language }}" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    {% if metadata.description %}<meta name="description" content="{{ metadata.description }}" />{% endif %}
+    <link rel="stylesheet" href="/assets/style.css" />
+    {% block head %}{% endblock head %}
+  </head>
+  <body>
+
+    <nav class="site-nav">
+      <a class="nav-brand" href="/">{{ config.title }}</a>
+      <div class="nav-links">
+        <a href="/posts/">posts</a>
+        <a href="/bookshelf/">bookshelf</a>
+      </div>
+    </nav>
+
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
+
+    <footer class="status-bar">
+      <span class="sb-mode">NORMAL</span>
+      <span class="sb-path">{% block sb_path %}~{% endblock sb_path %}</span>
+      <div class="sb-right">
+        <span class="sb-time" id="sb-time"></span>
+        <span class="sb-toggle" id="theme-toggle"></span>
+      </div>
+    </footer>
+
+    <script src="/assets/site.js"></script>
+  </body>
+</html>

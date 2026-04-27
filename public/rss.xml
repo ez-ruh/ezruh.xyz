@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ezruh.xyz</title>
+    <link>https://ezruh.xyz</link>
+    <description>Latest posts</description>
+    <generator>Norgolith</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 27 Apr 2026 00:28:33 +0000</lastBuildDate>
+    <ttl>60</ttl>
+    <atom:link href="https:&#x2F;&#x2F;ezruh.xyz/rss.xml" rel="self" type="application/rss+xml" />
+
+    <image>
+      <url>https://ezruh.xyz&#x2F;assets&#x2F;favicon.png</url>
+      <title>ezruh.xyz</title>
+      <link>https://ezruh.xyz</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+
+    
+  </channel>
+</rss>

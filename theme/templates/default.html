@@ -1,7 +1,8 @@
 {% extends "base.html" %}
-{% block title %}{{ metadata.title }} — {{ config.title }}{% endblock title %}
+{% block title %}{{ config.title }}{% endblock title %}
 {% block content %}
 <article class="prose">
   {{ content | safe }}
 </article>
 {% endblock content %}
+

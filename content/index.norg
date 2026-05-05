@@ -6,12 +6,12 @@ authors: [
 ]
 categories: []
 created: 2026-04-26T11:03:28-05:00
-updated: 2026-04-26T19:23:07-0600
+updated: 2026-05-05T09:29:17-0600
 layout: home
 draft: false
 version: 1.1.1
 @end
 
-I'm Ezra, check out my {/posts/index.norg}[posts] to see what profound thoughts I've been having, or check out my {/bookshelf/index.norg}[bookshelf] to see essays on books I've read.
+I'm Ezra, check out my {/posts/}[posts] to see what profound thoughts I've been having, or check out my {/bookshelf/}[bookshelf] to see essays on books I've read.
 
 You can write me an angry letter at contact@ezruh.xyz
